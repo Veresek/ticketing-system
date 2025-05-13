@@ -2,7 +2,7 @@
 
 ## 📌 Opis
 
-Aplikacja umożliwia użytkownikom (uczniom/nauczycielom) zgłaszanie usterek technicznych w salach szkolnych. Logowanie odbywa się przez konto Office 365 (Microsoft Azure AD). 
+Aplikacja umożliwia użytkownikom (uczniom/nauczycielom) zgłaszanie usterek technicznych w salach szkolnych. Logowanie odbywa się przez konto Office 365 (Microsoft Azure AD).
 Administratorzy mają dostęp do specjalnego panelu, gdzie mogą przeglądać wszystkie zgłoszenia i oznaczać naprawione problemy.
 
 ---
@@ -29,6 +29,7 @@ Administratorzy mają dostęp do specjalnego panelu, gdzie mogą przeglądać ws
 Dostępny po zalogowaniu.
 
 ### Pola:
+
 - **Sala** – tekst (np. `203`, `101A`)
 - **Rodzaj usterki** – lista rozwijana:
   - Sprzęt komputerowy
@@ -39,6 +40,7 @@ Dostępny po zalogowaniu.
 - **Opis** – pole tekstowe, wymagane minimum 10 znaków
 
 ### Walidacja:
+
 - Wszystkie pola są wymagane
 - Sala: maksymalnie 10 znaków, litery i cyfry
 - Opis: minimum 10 znaków
@@ -50,6 +52,7 @@ Dostępny po zalogowaniu.
 Dostępny tylko dla użytkowników z rolą `admin`.
 
 ### Funkcje:
+
 - Lista wszystkich zgłoszeń
 - Sortowanie i filtrowanie (np. według sali lub statusu)
 - Przycisk **"Oznacz jako naprawione"**
@@ -60,12 +63,11 @@ Dostępny tylko dla użytkowników z rolą `admin`.
 ## 🔒 Uprawnienia
 
 | Funkcja                            | User | Admin |
-|------------------------------------|------|--------|
-| Logowanie przez Office 365         | ✅   | ✅     |
-| Dodawanie zgłoszeń                 | ✅   | ✅     |
-| Podgląd własnych zgłoszeń          | ✅   | ✅     |
-| Podgląd wszystkich zgłoszeń        | ❌   | ✅     |
-| Oznaczanie usterek jako naprawione | ❌   | ✅     |
+| ---------------------------------- | ---- | ----- |
+| Logowanie przez Office 365         | ✅   | ✅    |
+| Dodawanie zgłoszeń                 | ✅   | ✅    |
+| Podgląd wszystkich zgłoszeń        | ❌   | ✅    |
+| Oznaczanie usterek jako naprawione | ❌   | ✅    |
 
 ## ⚠️ Przebieg działania
 
